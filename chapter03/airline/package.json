@@ -1,0 +1,14 @@
+{
+  "name": "airline",
+  "version": "1.0.0",
+  "description": "Keeps track of an airline's flights",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Naseer Mohammed",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
