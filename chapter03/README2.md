@@ -8,10 +8,10 @@
 
 - Previously, we have seen **npm** as package manager but  **npm** is capable of installing, starting and maintaining node projects. 
 
-- let's start with installing *express* globally using npm command
+- let's start with installing *express* globally using npm command.
 
 		Nmohammed in ~/mac-workspace/nodejs-tutorial (master●)
-		$ sudo npm install -g express
+		$ sudo npm install -g express-generator
         express@4.13.3 /usr/local/lib/node_modules/express
         ├── escape-html@1.0.2
         ├── merge-descriptors@1.0.0
@@ -44,14 +44,67 @@
 
 - So, we can now use **express** command line tool. Let's use express to create out application **airline2**
 
-- 
+      $ express airline2
 
+      create : airline2
+      create : airline2/package.json
+      create : airline2/app.js
+      create : airline2/public
+      create : airline2/public/images
+      create : airline2/public/stylesheets
+      create : airline2/public/stylesheets/style.css
+      create : airline2/routes
+      create : airline2/routes/index.js
+      create : airline2/routes/users.js
+      create : airline2/public/javascripts
+      create : airline2/views
+      create : airline2/views/index.jade
+      create : airline2/views/layout.jade
+      create : airline2/views/error.jade
+      create : airline2/bin
+      create : airline2/bin/www
 
+      install dependencies:
+      $ cd airline2 && npm install
 
+      run the app:
+      $ DEBUG=airline2:* npm start
 
+- Note that *express* has created **package.json** for us. Remember, earlier we used *npm init* to create package.json
 
+- Let's go ahead and take a look at this file:
 
-### Building our own module
+		$ cat package.json
+        {
+          "name": "airline2",
+          "version": "0.0.0",
+          "private": true,
+          "scripts": {
+            "start": "node ./bin/www"
+          },
+          "dependencies": {
+            "body-parser": "~1.13.2",
+            "cookie-parser": "~1.3.5",
+            "debug": "~2.2.0",
+            "express": "~4.13.1",
+            "jade": "~1.11.0",
+            "morgan": "~1.6.1",
+            "serve-favicon": "~2.3.0"
+          }
+
+- So, our application is dependent on above modules, let's go ahead and download them with following command:
+
+		$ npm install
+
+- Above command has downloaded all the modules inside **node_modules** folder
+
+- To start the app, use the command `npm start`, the application will be running at `http://localhost:3000`
+
+- To remove a module, delete its entry from **package.json** file and run command `npm prune`
+
+### Continue
+
+- read [README3.md](README3.md) to learn how to build our own module
 
 
 
