@@ -44,31 +44,32 @@
 
 - So, we can now use **express** command line tool. Let's use express to create out application **airline2**
 
-      $ express airline2
 
-      create : airline2
-      create : airline2/package.json
-      create : airline2/app.js
-      create : airline2/public
-      create : airline2/public/images
-      create : airline2/public/stylesheets
-      create : airline2/public/stylesheets/style.css
-      create : airline2/routes
-      create : airline2/routes/index.js
-      create : airline2/routes/users.js
-      create : airline2/public/javascripts
-      create : airline2/views
-      create : airline2/views/index.jade
-      create : airline2/views/layout.jade
-      create : airline2/views/error.jade
-      create : airline2/bin
-      create : airline2/bin/www
+      		$ express airline2
 
-      install dependencies:
-      $ cd airline2 && npm install
+      		create : airline2
+      		create : airline2/package.json
+      		create : airline2/app.js
+            create : airline2/public
+            create : airline2/public/images
+            create : airline2/public/stylesheets
+            create : airline2/public/stylesheets/style.css
+            create : airline2/routes
+            create : airline2/routes/index.js
+            create : airline2/routes/users.js
+            create : airline2/public/javascripts
+            create : airline2/views
+            create : airline2/views/index.jade
+            create : airline2/views/layout.jade
+            create : airline2/views/error.jade
+            create : airline2/bin
+            create : airline2/bin/www
 
-      run the app:
-      $ DEBUG=airline2:* npm start
+      		install dependencies:
+      		$ cd airline2 && npm install
+
+      		run the app:
+      		$ DEBUG=airline2:* npm start
 
 - Note that *express* has created **package.json** for us. Remember, earlier we used *npm init* to create package.json
 

@@ -44,3 +44,7 @@
 	- rename *index.js* file to something else like *module.js*
 	- edit *package.json* file and change *main* property from `index.js` to `module.js`
 	- now, whenever *flight* module is loaded, the **module.js** file is gets called
+
+#### Continue
+
+- Read [chapter04/README4.md](../chapter04/README.md) to learn module caching and how to avoid it.
