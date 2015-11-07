@@ -120,6 +120,15 @@
             at node.js:814:3
 
 
+#### Exercise
+
+- Based on the Module tutorial above, modify the code such that the program should:
+	- track the number of flights 
+	- track all destinations served
+	- export multiple functinos from the module
+	
+
+
 
 
 
