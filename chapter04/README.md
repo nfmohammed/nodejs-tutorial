@@ -66,7 +66,7 @@
 
 - Here, we will look at even better way to create multiple object and avoid module caching.
 
-- Checkout the code in **flight3/index.js** 
+- Checkout the code in **flight3/index.js**. In this example, the module creates a new object and returns to the calling program (i.e. app.js)
 
 - Rerun the program:
 
@@ -96,6 +96,30 @@
           arrives: undefined,
           actualDepart: 1446433231350,
           actualArrive: 1446433231350 }
+
+
+### Creating Multiple Objects from same module - 3
+
+- Based on above program, we can even return the base object **Flight** and create new instances of it in the main program (app.js). So, the only changes needed are : instead of return **instance** object, we will return **Flight** object. Checkout the code in ***flight4/index.js***
+
+- Rerun the program: **I am getting error here**
+
+		Nmohammed in ~/mac-workspace/nodejs-tutorial/chapter04 (master●●)
+        $ node app4.js
+        /Users/Nmohammed/mac-workspace/nodejs-tutorial/chapter04/app4.js:11
+        var pl = new Flight();
+                     ^
+        ReferenceError: Flight is not defined
+            at Object.<anonymous> (/Users/Nmohammed/mac-workspace/nodejs-tutorial/chapter04/app4.js:11:14)
+            at Module._compile (module.js:460:26)
+            at Object.Module._extensions..js (module.js:478:10)
+            at Module.load (module.js:355:32)
+            at Function.Module._load (module.js:310:12)
+            at Function.Module.runMain (module.js:501:10)
+            at startup (node.js:129:16)
+            at node.js:814:3
+
+
 
 
 
