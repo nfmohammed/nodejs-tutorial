@@ -5,6 +5,7 @@
 - NodeJS can be downloaded/installed from nodejs.org
     - Preferably, use [Node Version Manager](https://github.com/creationix/nvm) to install different versions of Node
 
+- Note that we have included *node_modules* in gitignore file, so you will have to execute command `npm install`to download node dependencies.
 
 #### Challenges
 - There is some compatibility issue with NVM and NPM. As soon as I open the zsh terminal, I get the following warning.
