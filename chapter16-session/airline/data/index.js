@@ -10,6 +10,14 @@ module.exports = {
                 "arrives" : "12:00 PM"
         } ,
         
+        "16" : {
+                "number":16,
+                "origin":"ORD",
+                "destination":"EWR",
+                "departs": "01:55 PM",
+                "arrives" : "04:00 PM"
+        },
+
         "18" : {
                 "number" : 18,
                 "origin" : "LAX",
@@ -24,7 +32,8 @@ module.exports = {
                 "destination" : "DEN",
                 "departs" : "05:00 PM",
                 "arrives"  : "08:00 PM"
-        } 
+        }
+
 
 
 }

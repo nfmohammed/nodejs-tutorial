@@ -30,7 +30,7 @@
             app.use(express.session({
                 secret: 'keyboard cat',
                 store: new MongoStore({
-                    mongoose_connection: db
+                    mongooseConnection: db
                 })
             }));
 
@@ -50,7 +50,7 @@
          functions.flight = function(req, res){
                     var number = req.param('number');
 
-                    **req.session.lastName = number;**
+                    **req.session.lastNumber = number;**
 
                     if (typeof flights[number] === 'undefined'){
                             res.status(404).json({status: 'error'});

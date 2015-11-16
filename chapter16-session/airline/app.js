@@ -19,7 +19,7 @@ module.exports = function (flightsData, db){
     app.use(express.session({
         secret: 'keyboard cat',
         store: new MongoStore({
-            mongoose_connection: db
+            mongooseConnection: db
         })
     }));
     app.use(express.json());

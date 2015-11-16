@@ -17,7 +17,8 @@ module.exports = function(flightsData){
     functions.flight = function(req, res){
             var number = req.param('number');
 
-            req.session.lastName = number;//storing number in session
+            req.session.lastNumber = number;//storing number in session
+            console.log ('req.session.lastNumber = ' + req.session.lastNumber);
 
             if (typeof flights[number] === 'undefined'){
                     res.status(404).json({status: 'error'});
@@ -76,6 +77,7 @@ module.exports = function(flightsData){
 
     //reading from database
     functions.arrivals = function(req, res){
+        console.log ('arrivals: req.session.lastNumber = ' + req.session.lastNumber);
         //FlightSchema.find(); //this will pull all database records in random order
         FlightSchema.find()
         .setOptions({sort:'actualArrive'}) //sorting data by arrivalTime
