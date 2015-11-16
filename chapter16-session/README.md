@@ -20,6 +20,12 @@
         $ npm install --save connect-mongo
         //if there are errors, ignore them
 
+- `connect-mongo` middleware stores all express sessions in mongodb. Once session is enabled, variables can be set in request object and persisted between requests to requests for that user.
+
+![04](images/04.png)
+
+![05](images/05.png)
+
 #### code changes
 
 - the starting code has been taken from previous chapter
