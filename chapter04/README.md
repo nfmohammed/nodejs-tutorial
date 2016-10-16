@@ -106,18 +106,30 @@
 
 		Nmohammed in ~/mac-workspace/nodejs-tutorial/chapter04 (master●●)
         $ node app4.js
-        /Users/Nmohammed/mac-workspace/nodejs-tutorial/chapter04/app4.js:11
-        var pl = new Flight();
-                     ^
-        ReferenceError: Flight is not defined
-            at Object.<anonymous> (/Users/Nmohammed/mac-workspace/nodejs-tutorial/chapter04/app4.js:11:14)
-            at Module._compile (module.js:460:26)
-            at Object.Module._extensions..js (module.js:478:10)
-            at Module.load (module.js:355:32)
-            at Function.Module._load (module.js:310:12)
-            at Function.Module.runMain (module.js:501:10)
-            at startup (node.js:129:16)
-            at node.js:814:3
+        First Flight Information:
+        { number: 847,
+          origin: 'PDX',
+          destination: 'LAX',
+          departs: undefined,
+          arrives: undefined,
+          actualDepart: 1476595133413,
+          actualArrive: 1476595133413 }
+        Second Flight Information:
+        { number: 382,
+          origin: 'AUS',
+          destination: 'DCA',
+          departs: undefined,
+          arrives: undefined,
+          actualDepart: undefined,
+          actualArrive: undefined }
+        First Flight Information:
+        { number: 847,
+          origin: 'PDX',
+          destination: 'LAX',
+          departs: undefined,
+          arrives: undefined,
+          actualDepart: 1476595133413,
+          actualArrive: 1476595133413 }
 
 
 #### Exercise

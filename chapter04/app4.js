@@ -1,5 +1,5 @@
 //This code is taken from app2.js file
-var flight = require ('./flight4')
+var Flight = require ('./flight4')
 
 //create 1st object with flight info
 var pdxlax = {
