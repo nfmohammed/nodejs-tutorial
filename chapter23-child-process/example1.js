@@ -55,3 +55,8 @@ var child7 = cp.spawn(progs.list, ["-l"], {cwd: "pub"})
 child7.on("error", (err) =>{
     console.log(`Error occured from child process 7:\n ${err}\n`)
 })
+
+//print message before ending main process
+process.on("exit", () => {
+    console.log("Now ending main process.......");
+})

@@ -28,3 +28,8 @@ var child1 = cp.execFile(compiler, [version, out, outfile, infile], (error, out,
         })
     }
 })
+
+//print message before ending main process
+process.on("exit", () => {
+    console.log("Now ending main process.......");
+})

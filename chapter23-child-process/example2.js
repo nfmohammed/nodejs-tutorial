@@ -33,3 +33,8 @@ var child3 = cp.exec(progs.remove + " -r unknown.txt", {cwd: "dummy"}, (error, s
         console.log(stdout);
     }
 })
+
+//print message before ending main process
+process.on("exit", () => {
+    console.log("Now ending main process.......");
+})
